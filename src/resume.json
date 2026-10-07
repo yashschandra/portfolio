@@ -1,0 +1,191 @@
+{
+  "summary": "Software engineer and 2-time entrepreneur with 10 years of experience delivering backend, web and Android products across messaging, real-money gaming, payments and matchmaking. Developed distributed services with Go, Python, JS using Kafka, gRPC, PostgreSQL, Redis and Firestore, and operated cloud infrastructure on Kubernetes, AWS and GCP. Maintained messaging services handling billions of daily API requests, with a focus on performance, reliability, automation and integration testing. Designed infrastructure that saved $500K annually at MPL; co-founded Cloudfeather Games, helped raise $1.25M at a $5M valuation, and led 5 engineers. Contributed to open-source projects including Bitcask, Sentry and Grafana, and built AI applications using Ollama, Whisper and MLX.",
+  "experience": [
+    {
+      "title": "Software Engineer L4 - In-app Messaging",
+      "company": "Customer.io",
+      "date": "Dec 2025 - Present",
+      "highlights": [
+        "Maintained Go and .NET services on GKE handling billions of daily API requests; contributed to the migration from .NET to Go.",
+        "Optimised Go SSE delivery: 58 to 2,114 events/second (~36x) and 3 to 1 Firestore fetches/event in a local benchmark (96 events x 3 aliases; 5 ms simulated Firestore latency).",
+        "Reduced in-app editor memory usage by approximately 100 MB per load through Framecast and Sentry for Ember optimisations.",
+        "Worked on hosted in-app form pages and embed scripts using Temporal, GCS and a CDN, and platform support for thousands of live activities per second on Android and iOS.",
+        "Built Playwright E2E testing with SRE, scheduled through GitHub Actions with Prometheus Pushgateway metrics and Slack reporting.",
+        "Built a MySQL query UI supporting bastion/jump hosts and US/EU databases; added plugin support to local service tooling and expanded shared testing utilities.",
+        "Shared engineering work and Claude plugins for day-to-day automation through company-wide demos."
+      ]
+    },
+    {
+      "title": "Co-founder & CTO",
+      "company": "Cloudfeather Games (acquired by MPL)",
+      "date": "Oct 2021 - Oct 2025",
+      "highlights": [
+        "Built a custom Kubernetes game-server orchestrator, proxy and autoscaler for millions of users, reducing infrastructure costs by $500K annually while improving stability at MPL.",
+        "Built 3 card-game backends processing 50K+ games/day, with matchmaking, automatic recovery and game garbage collection.",
+        "Integrated 10+ gaming platforms for authentication, payments and settlements; built supporting payment, settlement and profile modules handling 100K+ monthly transactions.",
+        "Led 5 engineers across backend, Android, web and Unity; helped raise $1.25M at a $5M valuation and led acquisition technical due diligence.",
+        "Led 4 developers delivering MPL Poker in 5 formats (NLH, PLO 4/5/6 and Rapid) for millions of monthly users; partnered with product/design and ran 3 feedback demos.",
+        "Automated Grafana dashboards and alerts with its SDK; operated Dockerised Jenkins, OpenVPN, Superset, Prometheus and Grafana.",
+        "Built a mobile score-extraction pipeline for Bountyverse using TensorFlow Lite, Keras and mean squared error; integrated creation/hunt activities with Discord.",
+        "Automated daily analytics reporting for 1,000+ users with CleverTap and Google Sheets; explored HTTP/3 image delivery and ComfyUI-based generative AI for Slark, an in-game reskinning tool."
+      ]
+    },
+    {
+      "title": "Software Engineer 3 - Risk & Settlement",
+      "company": "Grab",
+      "date": "Aug 2019 - Oct 2021",
+      "highlights": [
+        "Built a settlement pipeline enabling instant payouts for 1,000+ merchants; replaced cron jobs with a Go/Kafka delay queue that processed 100K+ settlements in 15 minutes in its 1st production run.",
+        "Integrated fraud detection with Maybank and added rule operators, improving detection by 3%; enhanced a React AML dashboard analysing 100K+ daily transactions.",
+        "Built a Docker-in-Docker integration test framework for Go, Redis, PostgreSQL, Aerospike and Kafka; contributed code-coverage and structured-logging tools."
+      ]
+    },
+    {
+      "title": "Software Development Engineer - Core Matchmaking",
+      "company": "UrbanClap",
+      "date": "Dec 2018 - Jul 2019",
+      "highlights": [
+        "Built reverse matchmaking for thousands of providers and greedy scheduling/job-assignment algorithms handling 500+ daily requests and 50+ providers; created a React dashboard for virtual-number allocation."
+      ]
+    },
+    {
+      "title": "Software Development Engineer - Samsung DeX",
+      "company": "Samsung Electronics",
+      "date": "Jun 2017 - Dec 2018",
+      "highlights": [
+        "Built a secondary taskbar for dual-screen DeX and Smart View On Display for idle-state notifications/time; reduced Android build time by 30% with a build queue for 6 engineers."
+      ]
+    },
+    {
+      "title": "Founding Member",
+      "company": "Infistart LLP",
+      "date": "Jul 2015 - Apr 2017",
+      "highlights": [
+        "Built a Python/Django coaching-management backend for 30K+ students, covering enrolments, fees, real-time updates and data synchronisation.",
+        "Developed an OMR grading tool processing 50 scans/minute; built food-ordering websites, an Android app and e-commerce websites for college entrepreneurs."
+      ]
+    },
+    {
+      "title": "Software Development Intern",
+      "company": "Flipkart",
+      "date": "May 2016 - Jul 2016",
+      "highlights": [
+        "Contributed to the backend of an internal security dashboard used by 1,600 engineers for compliance and system monitoring."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages & frameworks",
+      "items": "Go (Golang), Python, JavaScript, Django, React; Android development"
+    },
+    {
+      "category": "Backend & systems",
+      "items": "Distributed systems, HTTP APIs, gRPC, event-driven processing, SSE, Temporal, Kafka, payments, settlements, matchmaking"
+    },
+    {
+      "category": "Databases & storage",
+      "items": "PostgreSQL, MySQL, TimescaleDB, DynamoDB, Redis, Aerospike, Firestore, GCS"
+    },
+    {
+      "category": "Cloud & infrastructure",
+      "items": "AWS, GCP, Kubernetes, Docker, Terraform, autoscaling, infrastructure optimisation and automation, Jenkins, GitHub Actions"
+    },
+    {
+      "category": "Reliability & testing",
+      "items": "Prometheus, Grafana, Sentry, benchmarking, structured logging, integration testing, Playwright E2E testing"
+    },
+    {
+      "category": "AI & applications",
+      "items": "TensorFlow Lite, Keras, MLX, Ollama, Whisper, ComfyUI, generative AI, AI-assisted development"
+    },
+    {
+      "category": "Leadership & collaboration",
+      "items": "Technical leadership, mentorship, product/design partnership, project planning, communication, problem solving, OKR-driven delivery"
+    }
+  ],
+  "contributions": [
+    {
+      "name": "Bitcask",
+      "description": "Fixed a recursive read-lock deadlock by refactoring merge logic; added TTL keys, on-demand garbage collection and reclaimed-space reporting.",
+      "url": "https://git.mills.io/prologic/bitcask"
+    },
+    {
+      "name": "Sentry JavaScript",
+      "description": "Fixed a memory leak retaining approximately 34 MB after page navigation.",
+      "url": "https://github.com/getsentry/sentry-javascript"
+    },
+    {
+      "name": "PayPal Go SDK",
+      "description": "Fixed duplicate order requests when reusing the same request ID.",
+      "url": "https://github.com/plutov/paypal"
+    },
+    {
+      "name": "NutsDB",
+      "description": "Fixed a merge-time garbage collection issue caused by repeated key insertions.",
+      "url": "https://github.com/nutsdb/nutsdb"
+    },
+    {
+      "name": "Grafana",
+      "description": "Fixed stale dashboard views persisting after dashboard replacement.",
+      "url": "https://github.com/grafana/grafana"
+    },
+    {
+      "name": "RedisInsight",
+      "description": "Resolved a theme-handling issue that displayed incorrect colour schemes.",
+      "url": "https://github.com/redis/RedisInsight"
+    },
+    {
+      "name": "ComfyUI-3D-Pack",
+      "description": "Added .glb model animation support and image/GIF downloads from the UI.",
+      "url": "https://github.com/MrForExample/ComfyUI-3D-Pack"
+    },
+    {
+      "name": "AnythingLLM",
+      "description": "Improved maintainability through code cleanup and targeted refactoring.",
+      "url": "https://github.com/Mintplex-Labs/anything-llm"
+    }
+  ],
+  "projects": [
+    {
+      "name": "SAS - Serve and Sync",
+      "description": "Built HTTP folder mirroring between machines with a browser UI using only the Python standard library, without SSH, rsync or third-party dependencies.",
+      "url": "https://github.com/yashschandra/SAS"
+    },
+    {
+      "name": "Dear Diary",
+      "description": "Built a voice-based AI diary using Whisper transcription and Ollama, with a serverless application architecture on AWS Lambda and DynamoDB.",
+      "url": "https://github.com/yashschandra/deardiary"
+    },
+    {
+      "name": "Upscayl CLI",
+      "description": "Built a command-line tool for AI-powered image upscaling without a graphical interface.",
+      "url": "https://github.com/yashschandra/upscayl-cli"
+    },
+    {
+      "name": "AI Video Generation Pipeline",
+      "description": "Automated topic-to-video creation with Ollama for scripts, Kokoro TTS for narration, Flux models with MLX for imagery, and FFmpeg for assembly.",
+      "url": null
+    },
+    {
+      "name": "Xamine",
+      "description": "Built an AI-powered personalised question-paper tool for competitive exams using Mistral vision for question detection and Gemma for classification.",
+      "url": null
+    },
+    {
+      "name": "FreeTube",
+      "description": "Built a Puppeteer-based YouTube browser supporting ad-free playback through browser automation.",
+      "url": "https://github.com/yashschandra/FreeTube"
+    },
+    {
+      "name": "Rummy Bot",
+      "description": "Built a reinforcement-learning agent to play rummy and assist players preparing for competitive tournaments.",
+      "url": null
+    },
+    {
+      "name": "Poker Assistance Bot",
+      "description": "Built a real-time poker coach using ChatGPT vision and chat APIs to teach gameplay and guide player learning.",
+      "url": null
+    }
+  ]
+}

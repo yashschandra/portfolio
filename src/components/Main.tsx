@@ -18,6 +18,14 @@ function Main() {
           </div>
           <h1>Yash Suresh Chandra</h1>
           <p>Software Engineer & Tech Entrepreneur</p>
+          <a
+            className="resume-link"
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Resume (PDF)
+          </a>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/yashschandra" target="_blank" rel="noreferrer"><GitHubIcon/></a>
